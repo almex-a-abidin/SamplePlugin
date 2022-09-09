@@ -1,0 +1,19 @@
+{
+  "name": "sampleplugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artjohn29/SamplePlugin.git"
+  },
+  "author": "Art John",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/artjohn29/SamplePlugin/issues"
+  },
+  "homepage": "https://github.com/artjohn29/SamplePlugin#readme"
+}
