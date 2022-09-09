@@ -1,2 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="sample-plugin" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android"><name>SamplePlugin</name><js-module name="SamplePlugin" src="www/SamplePlugin.js"><clobbers target="cordova.plugins.SamplePlugin" /></js-module><platform name="ios"><config-file parent="/*" target="config.xml"><feature name="SamplePlugin"><param name="ios-package" value="SamplePlugin" /></feature></config-file><source-file src="src/ios/SamplePlugin.m" /></platform></plugin>
+<plugin id="sample-plugin" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+   <name>SamplePlugin</name>
+   <js-module name="SamplePlugin" src="www/SamplePlugin.js">
+      <clobbers target="cordova.plugins.SamplePlugin" />
+   </js-module>
+   <platform name="ios">
+      <config-file parent="/*" target="config.xml">
+         <feature name="SamplePlugin">
+            <param name="ios-package" value="SamplePlugin" />
+         </feature>
+      </config-file>
+      <source-file src="src/ios/SamplePlugin.m" />
+   </platform>
+</plugin>
