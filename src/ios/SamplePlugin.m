@@ -1,7 +1,7 @@
 /********* SamplePlugin.m Cordova Plugin Implementation *******/
 
 #import <Cordova/CDV.h>
-
+#import "NfcSessionAtOBJC.h"
 @interface SamplePlugin : CDVPlugin {
   // Member variables go here.
 }
