@@ -28,15 +28,15 @@
 // セッション開始メソッド
 - (void)beginScan {
     // セッションの作成
-    // self.session = [[NFCTagReaderSession new]
-    //             initWithPollingOption: (NFCPollingISO14443 | NFCPollingISO15693)
-    //             delegate: self
-    //             queue:dispatch_get_main_queue()
-    // ];
-    // // アラートメッセージの設定
-    // self.session.alertMessage = @"かざしてください";
-    // // セッション開始
-    // [self.session beginSession];
+    self.session = [[NFCTagReaderSession new]
+                initWithPollingOption: (NFCPollingISO14443 | NFCPollingISO15693)
+                delegate: self
+                queue:dispatch_get_main_queue()
+    ];
+    // アラートメッセージの設定
+    self.session.alertMessage = @"かざしてください";
+    // セッション開始
+    [self.session beginSession];
 }
 
 
