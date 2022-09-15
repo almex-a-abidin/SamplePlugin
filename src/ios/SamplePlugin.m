@@ -7,6 +7,8 @@
   // Member variables go here.
 }
 
+@property (strong,nonatomic) NFCTagReaderSession *session API_AVAILABLE(ios(13.0));
+
 @end
 
 @implementation SamplePlugin
