@@ -5,12 +5,12 @@
   // Member variables go here.
 }
 
-- (void)coolMethod:(CDVInvokedUrlCommand*)command;
+- (void)coolMethod;
 @end
 
 @implementation SamplePlugin
 
-- (void)coolMethod:(CDVInvokedUrlCommand*)command
+- (void)coolMethod
 {
     CDVPluginResult* pluginResult = nil;
     NSString* echo = [command.arguments objectAtIndex:0];
@@ -21,7 +21,7 @@
         pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR];
     }
 
-    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+    [self.commandDelegate sendPluginResult:pluginResult callbackId:"hello world"];
 }
 
 

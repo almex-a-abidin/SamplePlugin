@@ -2,8 +2,8 @@ var exec = require('cordova/exec');
 
 function SamplePlugin() {};
 
-SamplePlugin.prototype.coolMethod = function (arg0, success, error) {
-    exec(success, error, 'SamplePlugin', 'coolMethod', [arg0]);
+SamplePlugin.prototype.coolMethod = function (success, error) {
+    exec(success, error, 'SamplePlugin', 'coolMethod', []);
 };
 
 
