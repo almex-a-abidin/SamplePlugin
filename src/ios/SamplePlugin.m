@@ -3,6 +3,7 @@
 #import <Cordova/CDV.h>
 #import <CoreNFC/CoreNFC.h>
 #import <Foundation/Foundation.h>
+#import "NfcSessionAtOBJC.h"
 @interface SamplePlugin : CDVPlugin {
   // Member variables go here.
 }
