@@ -8,7 +8,7 @@
 }
 
 @property (strong,nonatomic) NFCTagReaderSession *session API_AVAILABLE(ios(13.0));
-
+@property (nonatomic) TagDataAtOBJC *tagOBJC;
 @end
 
 @implementation SamplePlugin
@@ -29,6 +29,8 @@
 
 // セッション開始メソッド
 - (void)beginScan {
+    self.tagOBJC = [[TagDataAtOBJC alloc] init];
+
     // セッションの作成
     self.session = [[NFCTagReaderSession new]
                 initWithPollingOption: (NFCPollingISO14443 | NFCPollingISO15693)
