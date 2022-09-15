@@ -6,8 +6,8 @@ SamplePlugin.prototype.coolMethod = function (arg0, success, error) {
     exec(success, error, 'SamplePlugin', 'coolMethod', [arg0]);
 };
 
-SamplePlugin.prototype.beginScan = function (arg0, success, error) {
-    exec(success, error, 'SamplePlugin', 'beginScan', [arg0]);
+SamplePlugin.prototype.beginScan = function () {
+    exec(null, null, 'SamplePlugin', 'beginScan', []);
 };
 
 if(!window.plugins)
