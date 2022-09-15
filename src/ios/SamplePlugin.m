@@ -1,6 +1,7 @@
 /********* SamplePlugin.m Cordova Plugin Implementation *******/
 
 #import <Cordova/CDV.h>
+#import <CoreNFC/CoreNFC.h>
 @interface SamplePlugin : CDVPlugin {
   // Member variables go here.
 }
@@ -21,6 +22,20 @@
     }
 
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+}
+
+// セッション開始メソッド
+- (void)beginScan {
+    // セッションの作成
+    self.session = [[NFCTagReaderSession new]
+                initWithPollingOption: (NFCPollingISO14443 | NFCPollingISO15693)
+                delegate: self
+                queue:dispatch_get_main_queue()
+    ];
+    // アラートメッセージの設定
+    self.session.alertMessage = @"かざしてください";
+    // セッション開始
+    [self.session beginSession];
 }
 
 
