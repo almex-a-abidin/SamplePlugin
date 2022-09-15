@@ -5,6 +5,7 @@
   // Member variables go here.
 }
 
+- (void)coolMethod;
 @end
 
 @implementation SamplePlugin
