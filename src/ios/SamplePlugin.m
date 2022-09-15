@@ -26,7 +26,7 @@
 }
 
 // セッション開始メソッド
-- (void)beginScan {
+- (void)beginScan:(CDVInvokedUrlCommand*)command {
     // セッションの作成
     self.session = [[NFCTagReaderSession new]
                 initWithPollingOption: (NFCPollingISO14443 | NFCPollingISO15693)
