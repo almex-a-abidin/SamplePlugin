@@ -5,7 +5,6 @@
   // Member variables go here.
 }
 
-- (void)coolMethod:(CDVInvokedUrlCommand*)command;
 @end
 
 @implementation SamplePlugin
